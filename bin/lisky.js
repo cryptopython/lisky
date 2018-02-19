@@ -18,7 +18,10 @@ import os from 'os';
 import lockfile from 'lockfile';
 import semver from 'semver';
 import packageJSON from '../package.json';
+
+// eslint-disable-next-line import/extensions,import/no-unresolved
 import lisky from '../dist';
+// eslint-disable-next-line import/extensions,import/no-unresolved
 import execFile from '../dist/execFile';
 
 const nonInteractiveLiskyArg = process.argv[1];
@@ -47,7 +50,6 @@ if (!semver.satisfies(process.version, packageJSON.engines.node)) {
 	exit();
 }
 
-// eslint-disable-next-line default-case
 switch (process.argv[2]) {
 	case 'clean':
 		console.warn(
