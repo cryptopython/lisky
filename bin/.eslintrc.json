@@ -1,8 +1,11 @@
 {
-	"env": {
-		"es6": false
-	},
+	"extends": ["lisk-base"],
 	"rules": {
-		"no-var": "off"
+		"arrow-parens": "off",
+		"curly": "off",
+		"function-paren-newline": "off",
+		"indent": "off",
+		"no-confusing-arrow": "off",
+		"object-curly-newline": "off"
 	}
 }
